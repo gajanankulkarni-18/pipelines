@@ -20,7 +20,8 @@ spec:
         configMap:
           name: ml-pipeline-ui-configmap
       containers:
-      - image: gcr.io/ml-pipeline/frontend:dummy
+#      - image: gcr.io/ml-pipeline/frontend:dummy
+      -image: quay.io/ibm/kubeflow-frontend-ppc64le:1.5.0	
         imagePullPolicy: IfNotPresent
         name: ml-pipeline-ui
         ports:

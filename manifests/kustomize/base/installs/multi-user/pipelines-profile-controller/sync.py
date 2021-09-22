@@ -91,7 +91,8 @@ class Controller(BaseHTTPRequestHandler):
                         "spec": {
                             "containers": [{
                                 "image":
-                                "gcr.io/ml-pipeline/visualization-server:" +
+                              #  "gcr.io/ml-pipeline/visualization-server:" +
+				"quay.io/ibm/kubeflow-visualization-server-ppc64le:" +
                                 kfp_version,
                                 "imagePullPolicy":
                                 "IfNotPresent",
@@ -205,7 +206,8 @@ class Controller(BaseHTTPRequestHandler):
                                 "name":
                                 "ml-pipeline-ui-artifact",
                                 "image":
-                                "gcr.io/ml-pipeline/frontend:" + kfp_version,
+                               # "gcr.io/ml-pipeline/frontend:" + kfp_version,
+				"quay.io/ibm/kubeflow-frontend-ppc64le:" + kfp_version,	
                                 "imagePullPolicy":
                                 "IfNotPresent",
                                 "ports": [{

@@ -26,7 +26,8 @@ data:
   ## cached steps with. Will be used to echo a message announcing that 
   ## the cached step result will be used. If not set it will default to 
   ## 'gcr.io/google-containers/busybox'
-  cacheImage: "gcr.io/google-containers/busybox"
+ ## cacheImage: "gcr.io/google-containers/busybox"
+  cacheImage: "quay.io/ibm/busybox"	
   ## cacheNodeRestrictions the dummy container runing if output is cached
   ## will run with the same affinity and node selector as the default pipeline
   ## step. This is defaulted to 'false' to allow the pod to be scheduled on 

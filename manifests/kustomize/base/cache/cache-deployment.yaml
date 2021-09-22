@@ -16,7 +16,8 @@ spec:
     spec:
       containers:
       - name: server
-        image: gcr.io/ml-pipeline/cache-server:dummy
+#        image: gcr.io/ml-pipeline/cache-server:dummy
+	 image: quay.io/ibm/kubeflow-cache-server-ppc64le:1.6.0
         env:
           - name: CACHE_IMAGE
             valueFrom:

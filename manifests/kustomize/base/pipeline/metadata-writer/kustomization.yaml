@@ -6,5 +6,6 @@ resources:
   - metadata-writer-rolebinding.yaml
   - metadata-writer-sa.yaml
 images:
-  - name: gcr.io/ml-pipeline/metadata-writer
+#  - name: gcr.io/ml-pipeline/metadata-writer
+  - name: quay.io/ibm/kubeflow-metadata-writer-ppc64le	
     newTag: 1.6.0

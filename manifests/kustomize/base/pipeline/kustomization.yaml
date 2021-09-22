@@ -35,15 +35,26 @@ resources:
   - container-builder-sa.yaml
   - viewer-sa.yaml
 images:
-  - name: gcr.io/ml-pipeline/api-server
-    newTag: 1.6.0
-  - name: gcr.io/ml-pipeline/persistenceagent
-    newTag: 1.6.0
-  - name: gcr.io/ml-pipeline/scheduledworkflow
-    newTag: 1.6.0
-  - name: gcr.io/ml-pipeline/frontend
-    newTag: 1.6.0
-  - name: gcr.io/ml-pipeline/viewer-crd-controller
-    newTag: 1.6.0
-  - name: gcr.io/ml-pipeline/visualization-server
+#  - name: gcr.io/ml-pipeline/api-server
+  - name: quay.io/ibm/kubeflow-api-server-ppc64le
+#    newTag: 1.6.0
+    newTag: 1.5.0
+#  - name: gcr.io/ml-pipeline/persistenceagent
+  - name: quay.io/ibm/kubeflow-persistenceagent-ppc64le
+    newTag: 1.5.0
+#   newTag: 1.6.0
+#  - name: gcr.io/ml-pipeline/scheduledworkflow
+#    newTag: 1.6.0
+  - name: quay.io/ibm/kubeflow-scheduledworkflow-ppc64le
+    newTag: 1.5.0
+#  - name: gcr.io/ml-pipeline/frontend
+#    newTag: 1.6.0
+  - name: quay.io/ibm/kubeflow-frontend-ppc64le
+    newTag: 1.5.0
+#  - name: gcr.io/ml-pipeline/viewer-crd-controller
+#    newTag: 1.6.0
+  - name: quay.io/ibm/kubeflow-viewer-crd-controller-ppc64le
+    newTag: 1.5.0
+#  - name: gcr.io/ml-pipeline/visualization-server
+  - name: quay.io/ibm/kubeflow-visualization-server-ppc64le
     newTag: 1.6.0

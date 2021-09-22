@@ -18,7 +18,9 @@ spec:
     spec:
       containers:
       - name: container
-        image: gcr.io/ml-pipeline/metadata-envoy:dummy
+#        image: gcr.io/ml-pipeline/metadata-envoy:dummy
+	image: quay.io/ibm/kubeflow-metadata-envoy-ppc64le:1.5.0
+	
         ports:
         - name: md-envoy
           containerPort: 9090

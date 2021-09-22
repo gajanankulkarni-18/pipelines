@@ -9,5 +9,6 @@ resources:
 commonLabels:
   app: cache-server
 images:
-  - name: gcr.io/ml-pipeline/cache-server
+#  - name: gcr.io/ml-pipeline/cache-server
+  - name:quay.io/ibm/kubeflow-cache-server-ppc64le   	
     newTag: 1.6.0

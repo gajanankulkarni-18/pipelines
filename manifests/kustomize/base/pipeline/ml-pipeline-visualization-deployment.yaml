@@ -16,7 +16,8 @@ spec:
         cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
     spec:
       containers:
-      - image: gcr.io/ml-pipeline/visualization-server:dummy
+#      - image: gcr.io/ml-pipeline/visualization-server:dummy
+      - image: quay.io/ibm/kubeflow-visualization-server-ppc64le:1.6.0	
         imagePullPolicy: IfNotPresent
         name: ml-pipeline-visualizationserver
         ports:
